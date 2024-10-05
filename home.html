@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>poltry doc</title>
+    <link rel="stylesheet" href="css/indexstyle.css">
+    <style>
+        body{
+            background-image: url("img/1920x1080/01.jpg");
+            background-size:cover;
+            background-repeat: no-repeat;
+             height: 100vh;
+            color:white;
+            
+        }
+    </style>
+</head>
+<body>
+   
+    <header>
+        <main>
+            <h1 style="text-align: center; color: black;"><b>Poltry doc</b></h1>
+        </main>
+        <nav>
+           <a href="#1"><button>add details </button></a>
+           <a href="#2"><button>view details </button></a>
+        </nav>
+    </header>
+    <div style="width: 100vw;border: 1px solid gray;"></div>
+    <main>
+        <h2 style="text-align: center;"> VIEW_DETAILS</h2>
+        <!-- view -->
+       <div class="veiw_details" id="2">
+       
+          <main>
+            <table border="1" id="tab">
+               <tr>
+                <th style="padding: 10px;">DAY</th>
+                <th style="padding: 10px;">BIRDS NO.</th>
+                <th style="padding: 10px;">MORTALITY</th>
+                <th style="padding: 10px;">FEED BAG</th>
+                <th style="padding: 10px;">BAG COST</th>
+                <th style="padding: 10px;">OTHER</th>
+                <th style="padding: 10px;">TOTTLE COASTING</th>
+               </tr>
+            </table>
+            <!-- <h4 style="text-align: center; margin-top: 50px;">TOTAL</h4>
+            <table border="1">
+                <tr>
+                    <th style="padding: 10px; min-width: 100px;">mortality</th>
+                    <th style="padding: 10px; min-width: 100px;">feed bag</th>
+                    <th style="padding: 10px; min-width: 100px;">total feed cost</th>
+                    <th style="padding: 10px; min-width: 100px;">total other cost</th>
+                </tr>
+                <tr>
+                    <td id="tm">0</td>
+                    <td id="tb">0</td>
+                    <td id="tfc">0</td>
+                    <td id="toc">0</td>
+                </tr>
+            </table> -->
+          </main>
+       </div>
+       <button onclick="clr()" id="cl">clear all data</button>
+        <div style="width: 100vw;border: 1px solid gray;"></div>
+       <!-- add -->        
+        <h2>ADD_DETAILS</h2>
+       <div class="add_details" id="1">
+        
+        <span>DAY <input type="number" id="day" disabled ></span>
+         <span>BIRDS <input type="number" id="birds" disabled></span>    
+        <span>MORTALITY<input type="number" name="" id="mortality"></span>
+        <span>FEED BAG <input type="number" name="" id="feed"></span>
+        <span>RATE OF BAGE<input type="number" name="" id="feed_rate"></span>
+        <span>OTHER/MEDICINE<input type="number" name="" id="other"></span>
+        <button id="add">ADD</button>
+        <hr>
+        
+       </div> 
+       
+    </main>
+    
+    <script src="js/indexjs.js"></script>
+</body>
+</html>
